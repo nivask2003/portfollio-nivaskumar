@@ -159,9 +159,8 @@
             margin-bottom: 1rem;
             opacity: 0;
             animation: fadeInUp 1s ease 0.7s forwards;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            text-align: center;
+            width: 100%;
         }
 
         .hero-description {
@@ -172,18 +171,24 @@
             animation: fadeInUp 1s ease 0.9s forwards;
         }
 
-        .typewriter {
+        .gradient-text {
             background: var(--gradient-primary);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            border-right: 2px solid var(--primary-color);
-            white-space: nowrap;
-            overflow: hidden;
             display: inline-block;
-            width: 0;
-            max-width: 100%;
-            animation: typewriter 3s steps(30) 1s forwards, blink 1s infinite;
+            animation: fadeIn 2s ease 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .cta-button {
@@ -815,7 +820,7 @@
         <div class="hero-content">
             <p class="hero-subtitle">Welcome to my portfolio</p>
             <h1 class="hero-title">
-                <span class="typewriter">Hi, I'm Nivas Kumar S – WordPress Developer</span>
+                <span class="gradient-text">Hi, I'm Nivas Kumar S – WordPress Developer</span>
             </h1>
             <p class="hero-description">
                 Crafting exceptional digital experiences with WordPress, delivering 50+ successful projects
