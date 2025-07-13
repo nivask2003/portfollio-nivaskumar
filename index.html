@@ -159,6 +159,9 @@
             margin-bottom: 1rem;
             opacity: 0;
             animation: fadeInUp 1s ease 0.7s forwards;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .hero-description {
@@ -177,6 +180,9 @@
             border-right: 2px solid var(--primary-color);
             white-space: nowrap;
             overflow: hidden;
+            display: inline-block;
+            width: 0;
+            max-width: 100%;
             animation: typewriter 3s steps(30) 1s forwards, blink 1s infinite;
         }
 
